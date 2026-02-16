@@ -1,12 +1,30 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { Input } from '../components/ui/Input';
 import { Music, Calendar, MapPin, Instagram, Heart, ArrowRight } from 'lucide-react';
 
 export default function Home() {
+    const navigate = useNavigate();
+
     const scrollToRegister = () => {
         document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => navigate("/success"))
+            .catch((error) => alert(error));
     };
 
     return (
@@ -111,7 +129,7 @@ export default function Home() {
                             name="registration"
                             method="POST"
                             data-netlify="true"
-                            action="/success"
+                            onSubmit={handleSubmit}
                             className="space-y-6 max-w-lg mx-auto"
                         >
                             <input type="hidden" name="form-name" value="registration" />
