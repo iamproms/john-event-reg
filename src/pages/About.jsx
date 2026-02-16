@@ -75,12 +75,9 @@ export default function About() {
 
                     <div className="bg-white/10 p-6 rounded-xl border border-white/20">
                         <h3 className="font-display text-2xl mb-2">What to Expect</h3>
-                        <ul className="list-disc list-inside space-y-2 text-lg">
-                            <li>Live acoustic and full-band performances</li>
-                            <li>Storytelling through song</li>
-                            <li>A warm, welcoming atmosphere</li>
-                            <li>Surprise guest appearances</li>
-                        </ul>
+                        <p className="text-lg leading-relaxed">
+                            Expect to be filled with love through arrays of different entertainment acts; music, dance etc as each act has been carefully selected to reach out to every tribe through ear candy tunes and lyrics. In love sessions with Dvoice nobody will be left out
+                        </p>
                     </div>
                 </div>
 
