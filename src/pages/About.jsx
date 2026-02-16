@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Music, Heart, ArrowLeft } from 'lucide-react';
-import profileImg from '../assets/dvoice-profile.jpg';
+// import profileImg from '../assets/dvoice-profile.jpg'; // Uncomment when file is replaced
+const profileImg = "https://placehold.co/600x800/2E7D32/FFFFFF?text=Upload+Your+Image";
 
 export default function About() {
     return (
