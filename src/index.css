@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;600;800&display=swap');
+
+@theme {
+  --color-brand-green: #2E7D32; /* Adjustable later */
+  --color-brand-yellow: #FFEA00;
+  --color-brand-orange: #FF6D00;
+  --font-family-display: 'Anton', sans-serif;
+  --font-family-body: 'Outfit', sans-serif;
+}
+
+:root {
+  font-family: var(--font-family-body);
+}
