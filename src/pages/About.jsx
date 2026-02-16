@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Music, Heart, ArrowLeft } from 'lucide-react';
+import profileImg from '../assets/dvoice-profile.jpg';
 
 export default function About() {
     return (
@@ -49,8 +50,12 @@ export default function About() {
                         </div>
                         {/* Placeholder for Artist Image - leveraging CSS pattern for now if no image */}
                         <div className="order-1 md:order-2 bg-brand-green h-64 md:h-80 rounded-2xl flex items-center justify-center relative overflow-hidden group">
-                            <div className="absolute inset-0 bg-gradient-to-tr from-brand-green to-brand-yellow opacity-80 group-hover:scale-110 transition-transform duration-700"></div>
-                            <span className="font-display text-white text-9xl opacity-20 select-none">D'V</span>
+                            <img
+                                src={profileImg}
+                                alt="D'Voice Profile"
+                                className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/20 to-brand-yellow/20 mix-blend-overlay"></div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +64,9 @@ export default function About() {
                 <div className="bg-brand-orange text-white rounded-[3rem] p-8 md:p-12 shadow-xl mb-16 -rotate-1 hover:rotate-0 transition-transform duration-500">
                     <h2 className="font-display text-4xl mb-6 text-brand-yellow">Why "Love Sessions"?</h2>
                     <p className="text-xl leading-relaxed mb-8 opacity-90">
-                        In a world that often feels disconnected, Love Sessions was born out of a desire to bring people together through the universal language of music. It's an intimate evening designed to be raw, unfiltered, and deeply moving. Whether you come for the art, the community, or the vibe, you'll leave with a full heart.
+                        … because Love sessions aims to reintroduce who/what love is to everyone. That those who do not know or who may have known before now is reminded that God is love and as he (God) has expressed his love vertically to us from above so we can in turn dispense His love horizontally to everyone around us.
+                        <br /><br />
+                        So that if you’re a child or an adult, single or married and regardless of your race and faith you get a chance to know about the real Love.
                     </p>
 
                     <div className="bg-white/10 p-6 rounded-xl border border-white/20">
