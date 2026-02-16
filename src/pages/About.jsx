@@ -8,11 +8,11 @@ export default function About() {
         <div className="min-h-screen bg-brand-yellow font-body text-gray-900 pb-20 overflow-x-hidden">
             {/* Navigation */}
             <nav className="p-6 md:p-8 flex justify-between items-center relative z-20">
-                <Link to="/" className="font-display text-2xl uppercase tracking-wider hover:text-brand-orange transition-colors">
+                <Link to="/" className="font-display text-xl uppercase tracking-wider hover:text-brand-orange transition-colors">
                     Love Sessions
                 </Link>
                 <Link to="/">
-                    <Button variant="outline" className="text-sm px-6 py-2">
+                    <Button variant="outline" className="text-xs px-5 py-2">
                         Back to Home
                     </Button>
                 </Link>
