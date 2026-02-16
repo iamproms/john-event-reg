@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { Input } from '../components/ui/Input';
-import { Music, Calendar, MapPin, Instagram, Heart, ArrowRight } from 'lucide-react';
+import { Music, Calendar, MapPin, Instagram, Heart, ArrowRight, Clock } from 'lucide-react';
 
 export default function Home() {
     const navigate = useNavigate();
@@ -95,7 +95,7 @@ export default function Home() {
                                 <h3 className="font-display text-2xl mb-1">Venue</h3>
                                 <p className="text-lg font-medium leading-relaxed">
                                     Artful Media Studio<br />
-                                    <span className="text-sm opacity-75">123 Creative Avenue, City Center</span>
+                                    <span className="text-sm opacity-75">Port Harcourt</span>
                                 </p>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ export default function Home() {
                     <Card className="bg-brand-orange text-white rotate-[1deg] hover:rotate-0 transition-transform duration-300">
                         <div className="flex items-start gap-4">
                             <div className="bg-white/20 p-3 rounded-full">
-                                <Music className="w-8 h-8" />
+                                <Clock className="w-8 h-8" />
                             </div>
                             <div>
                                 <h3 className="font-display text-2xl mb-1">Time</h3>
