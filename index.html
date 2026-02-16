@@ -1,15 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Love Sessions with D'Voice</title>
-    <meta name="description" content="Experience an intimate evening of live music, love, and soul with D'Voice on March 15th. Register now!" />
-    <meta name="theme-color" content="#2E7D32" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Sessions with D'Voice</title>
+  <meta name="description"
+    content="Experience an intimate evening of live music, love, and soul with D'Voice on March 15th. Register now!" />
+  <meta name="theme-color" content="#2E7D32" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <form name="registration" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="number" name="attendees" />
+    <select name="source"></select>
+    <input type="checkbox" name="updates" />
+  </form>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
