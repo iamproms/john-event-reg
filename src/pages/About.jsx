@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Music, Heart, ArrowLeft } from 'lucide-react';
-// import profileImg from '../assets/dvoice-profile.jpg'; // Uncomment when file is replaced
-const profileImg = "https://placehold.co/600x800/2E7D32/FFFFFF?text=Upload+Your+Image";
+import profileImg from '../assets/dvoice-profile.jpg'; // Uncomment when file is replaced
 
 export default function About() {
     return (
@@ -38,7 +37,11 @@ export default function About() {
                         <div className="order-2 md:order-1">
                             <h2 className="font-display text-4xl mb-4 text-brand-orange">Who is D'Voice?</h2>
                             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                                D'Voice is a visionary artist whose music transcends genres, blending soul, gospel, and afro-fusion into a tapestry of sound that speaks directly to the spirit. With a passion for authentic expression, D'Voice creates spaces where audiences can disconnect from the noise and reconnect with what matters.
+                                Dvoice is a gospel entertainer. As songwriter, recording and performing music artiste, he delivers his music through excellence with his energetic live performances with a fusion of rap, pop rock and soul amongst other genres.
+                                <br /><br />
+                                He is devoted to spreading God’s love through music.
+                                <br /><br />
+                                When he’s not being a voice of God’s love through music he is an architect and a facility manager and a sound business man
                             </p>
                             <div className="flex gap-4">
                                 <div className="bg-brand-green/10 p-3 rounded-full text-brand-green">
