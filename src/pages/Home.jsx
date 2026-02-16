@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
@@ -7,6 +7,7 @@ import { Music, Calendar, MapPin, Instagram, Heart, ArrowRight } from 'lucide-re
 
 export default function Home() {
     const navigate = useNavigate();
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const scrollToRegister = () => {
         document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
@@ -14,6 +15,7 @@ export default function Home() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setIsSubmitting(true);
 
         const myForm = event.target;
         const formData = new FormData(myForm);
@@ -24,7 +26,10 @@ export default function Home() {
             body: new URLSearchParams(formData).toString(),
         })
             .then(() => navigate("/success"))
-            .catch((error) => alert(error));
+            .catch((error) => {
+                alert(error);
+                setIsSubmitting(false);
+            });
     };
 
     return (
@@ -161,8 +166,14 @@ export default function Home() {
                                 </label>
                             </div>
 
-                            <Button type="submit" className="w-full mt-4 text-xl py-4" variant="primary">
-                                Confirm Registration <ArrowRight className="inline ml-2 w-5 h-5" />
+                            <Button type="submit" className="w-full mt-4 text-xl py-4" variant="primary" disabled={isSubmitting}>
+                                {isSubmitting ? (
+                                    "Confirming..."
+                                ) : (
+                                    <>
+                                        Confirm Registration <ArrowRight className="inline ml-2 w-5 h-5" />
+                                    </>
+                                )}
                             </Button>
 
                             <p className="text-xs text-center text-gray-400 mt-4">
