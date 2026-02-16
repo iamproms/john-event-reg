@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Music, Heart, ArrowLeft } from 'lucide-react';
 import profileImg from '../assets/dvoice-profile.jpg'; // Uncomment when file is replaced
+import logoImg from '../assets/LS_1.png';
 
 export default function About() {
     return (
         <div className="min-h-screen bg-brand-yellow font-body text-gray-900 pb-20 overflow-x-hidden">
             {/* Navigation */}
             <nav className="p-6 md:p-8 flex justify-between items-center relative z-20">
-                <Link to="/" className="font-display text-xl uppercase tracking-wider hover:text-brand-orange transition-colors">
-                    Love Sessions
+                <Link to="/" className="hover:opacity-80 transition-opacity">
+                    <img src={logoImg} alt="Love Sessions" className="h-10 w-auto" />
                 </Link>
                 <Link to="/">
                     <Button variant="outline" className="text-xs px-5 py-2">

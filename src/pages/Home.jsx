@@ -4,6 +4,7 @@ import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { Input } from '../components/ui/Input';
 import { Music, Calendar, MapPin, Instagram, Heart, ArrowRight, Clock } from 'lucide-react';
+import logoImg from '../assets/LS_1.png';
 
 export default function Home() {
     const navigate = useNavigate();
@@ -36,8 +37,8 @@ export default function Home() {
         <div className="min-h-screen bg-brand-green overflow-x-hidden font-body text-gray-900 pb-20">
             {/* Navigation */}
             <nav className="p-6 md:p-8 flex justify-between items-center relative z-20">
-                <a href="/" className="font-display text-2xl uppercase tracking-wider text-white hover:text-brand-yellow transition-colors">
-                    Love Sessions
+                <a href="/" className="hover:opacity-80 transition-opacity">
+                    <img src={logoImg} alt="Love Sessions" className="h-12 w-auto" />
                 </a>
                 <a href="/about">
                     <Button variant="outline" className="text-sm px-6 py-2 border-white text-white hover:bg-white hover:text-brand-green">
