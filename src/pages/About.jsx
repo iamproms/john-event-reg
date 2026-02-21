@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Music, Heart, ArrowLeft } from 'lucide-react';
 import profileImg from '../assets/dvoice-profile.jpg'; // Uncomment when file is replaced
-import logoImg from '../assets/LS_1.png';
+import logoImg from '../assets/LS_3.png';
 
 export default function About() {
     return (
@@ -39,10 +39,6 @@ export default function About() {
                             <h2 className="font-display text-4xl mb-4 text-brand-orange">Who is D'Voice?</h2>
                             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                                 Dvoice is a gospel entertainer. As songwriter, recording and performing music artiste, he delivers his music through excellence with his energetic live performances with a fusion of rap, pop rock and soul amongst other genres.
-                                <br /><br />
-                                He is devoted to spreading God’s love through music.
-                                <br /><br />
-                                When he’s not being a voice of God’s love through music he is an architect and a facility manager and a sound business man
                             </p>
                             <div className="flex gap-4">
                                 <div className="bg-brand-green/10 p-3 rounded-full text-brand-green">
@@ -70,8 +66,6 @@ export default function About() {
                     <h2 className="font-display text-4xl mb-6 text-brand-yellow">Why "Love Sessions"?</h2>
                     <p className="text-xl leading-relaxed mb-8 opacity-90">
                         … because Love sessions aims to reintroduce who/what love is to everyone. That those who do not know or who may have known before now is reminded that God is love and as he (God) has expressed his love vertically to us from above so we can in turn dispense His love horizontally to everyone around us.
-                        <br /><br />
-                        So that if you’re a child or an adult, single or married and regardless of your race and faith you get a chance to know about the real Love.
                     </p>
 
                     <div className="bg-white/10 p-6 rounded-xl border border-white/20">

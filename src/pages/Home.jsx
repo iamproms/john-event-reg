@@ -4,7 +4,7 @@ import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { Input } from '../components/ui/Input';
 import { Music, Calendar, MapPin, Instagram, Heart, ArrowRight, Clock } from 'lucide-react';
-import logoImg from '../assets/LS_1.png';
+import logoImg from '../assets/LS_3.png';
 
 export default function Home() {
     const navigate = useNavigate();
@@ -96,7 +96,7 @@ export default function Home() {
                                 <h3 className="font-display text-2xl mb-1">Venue</h3>
                                 <p className="text-lg font-medium leading-relaxed">
                                     Artful Media Studio<br />
-                                    <span className="text-sm opacity-75">Port Harcourt</span>
+                                    <span className="text-sm opacity-75">Off Ada George Rd, opp NNPC OKilton, Port Harcourt</span>
                                 </p>
                             </div>
                         </div>
