@@ -38,7 +38,7 @@ export default function About() {
                         <div className="order-2 md:order-1">
                             <h2 className="font-display text-4xl mb-4 text-brand-orange">Who is D'Voice?</h2>
                             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                                Dvoice is a gospel entertainer. As songwriter, recording and performing music artiste, he delivers his music through excellence with his energetic live performances with a fusion of rap, pop rock and soul amongst other genres.
+                                Dvoice is a gospel entertainer. As a songwriter, recording and performing music artiste, he delivers his music through excellence with his energetic live performances with a fusion of rap, pop rock and soul amongst other genres.
                             </p>
                             <div className="flex gap-4">
                                 <div className="bg-brand-green/10 p-3 rounded-full text-brand-green">
